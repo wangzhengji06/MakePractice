@@ -1,0 +1,14 @@
+# Local Nix/direnv environment
+.direnv/
+
+# Compiled objects, libraries, and executable
+*.o
+*.a
+*.so
+*.so.*
+/src/xserver/xserver
+
+# Editor backups and swap files
+*~
+*.swp
+*.swo

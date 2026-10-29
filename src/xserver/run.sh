@@ -1,0 +1,4 @@
+#!bash
+LD_LIBRARY_PATH=../xthread:../xcom;
+export LD_LIBRARY_PATH
+./xserver
