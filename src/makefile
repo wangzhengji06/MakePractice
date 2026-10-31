@@ -1,0 +1,15 @@
+# src/makefile
+TARGET=xcom xthread xserver
+LDIR=$(shell pwd)
+CTARGET=$(foreach n,$(TARGET),$(LDIR)/$n)
+all:$(TARGET)
+
+$(TARGET):
+	$(MAKE) -C $(LDIR)/$@/ -f $(LDIR)/$@/makefile
+clean: $(CTARGET)
+$(CTARGET):
+	$(MAKE) -C $@ -f $@/makefile clean
+
+
+.PHONY: $(TARGET) all clean $(CTARGET)
+

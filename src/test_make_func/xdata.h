@@ -1,0 +1,4 @@
+class XData {
+public:
+  XData();
+};

@@ -1,0 +1,7 @@
+TARGET=test_make_func
+SRC:=$(wildcard *.cpp)
+OBJS=$(patsubst %.cpp,%.o,$(SRC))
+$(TARGET): $(OBJSb)
+	$(CXX) $^ -o $@ 
+#all:
+#	echo $(SRC)

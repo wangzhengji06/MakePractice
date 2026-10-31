@@ -1,0 +1,1 @@
+nohup out/bin//test_install 5    &
